@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8aa3f7368b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-container">
+    <div id="header">
+    <div class="container">
+    <nav>
+        <h1 class="logo">My Pharmasy</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#consultation">Consultation</a></li>
+            <li><a href="#order-now">Service Area</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+    
+    </div>
+    <!-- <img src="app.png" class="image" width="300" height="550">  -->
+    <div class="header-text">
+        
+        <h1>A Wealth of Experience To <br> Heal And Help You</h1>
+        <p>Get your prescribed medicines delivered to your doorstep with <br>our efficient and secure delivery service.</p>
+        <button>See More</button>
+        <button class="btn">Make An Appointments</button>
+    </div>
+    
+    <div id="about">
+        <h1>About</h1>
+        <p>Who we are - India's most convenient online pharmacy
+            My Pharmacy is one of India’s most trusted pharmacies, dispensing quality <br>medicines at reasonable prices to over 9 million happy customers – PAN India. At netmeds.com, we help you look after your own<br> health effortlessly as well as take care of loved ones wherever they may reside in India. You can buy and send medicines from any <br>corner of the country - with just a few clicks of the mouse.
+            
+            What we do – Offer fast online access to medicines with convenient home <br>delivery At netmeds.com, we make a wide range of prescription medicines and other health products conveniently available all across<br> India. Even second and third tier cities and rural villages can now have access to the latest medicines. Since we also offer generic<br> alternatives to most medicines, online buyers can expect significant savings.</p>
+            
+        </div>
+        <div class="card-container">
+            <div class="card">
+              <img src="nature.jpg" alt="24-Hour Service Logo">
+              <p>24-Hour Service</p>
+            </div>
+        
+            <div class="card">
+              <img src="doctor-logo.png" alt="Qualified Doctor Logo">
+              <p>Qualified Doctor</p>
+            </div>
+        
+            <div class="card">
+              <img src="nature.jpg" alt="Emergency Care Logo">
+              <p>Emergency Care</p>
+            </div>
+        
+            <div class="card">
+              <img src="operation-logo.png" alt="Operation Theater Logo">
+              <p>Operation Theater</p>
+            </div>
+          </div>
+
+    
+    <section class="consultation-form" id="consultation">
+        <h1>Doctor Consultation Form</h1>
+        <form action="submit_consultation.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="consultation-method">Preferred Consultation Method:</label>
+            <select id="consultation-method" name="consultation-method" required>
+                <option value="" disabled selected>Select consultation method</option>
+                <option value="video">Video Call</option>
+                <option value="phone">Phone Call</option>
+                <option value="in-person">In-Person Visit</option>
+            </select>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit" class="submit-button">Submit Consultation Request</button>
+        </form>
+    </section>
+    
+    <section id="order-now" class="order-section">
+        <h2>Place Your Order Now</h2>
+        <form action="submit_order.php" method="post">
+            <label for="medicine">Select Medicine:</label>
+            <select id="medicine" name="medicine" required>
+                <option value="" disabled selected>Select your medicine</option>
+                <option value="medicine1">Paracetamol</option>
+                <option value="medicine2">Cetirizine</option>
+                <option value="medicine3">Pantoprazole</option>
+                <option value="medicine4">Zerodol P</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="submit" class="cta-button">Submit Order</button>
+        </form>
+    </section>
+    <div id="contact">
+        <div class="container">
+            <h2 class="sub-title">Contact Me</h2>
+                <p><i class="fa-solid fa-envelope"></i>kamranbgp15@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>7059400392</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/md-kamran-khan-05b72a147/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/MDKAMRANKH"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/kamranbgp15/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100011326986244"><i class="fa-brands fa-facebook"></i></a>
+                    
+        </div>
+    </div>
+    <div>
+        <footer>
+            Copyright © khan. Made with <i class="fa-solid fa-heart"></i> by Kamran</p>
+        </footer>
+    </div>
+    </div>
+    
+</div>
+
+
+</script>
+</body>
+</html>
